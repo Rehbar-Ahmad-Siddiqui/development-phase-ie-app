@@ -5,7 +5,7 @@ const dotenv = require('dotenv');
 const colors = require('colors');
 const { connect } = require('http2');
 const path = require('path');
-const connectDb = require('./config/connectDB'); // import statement for database connection
+const connectDb = require('./config/connectDb'); // import statement for database connection
 
 // config dot env file
 dotenv.config();
