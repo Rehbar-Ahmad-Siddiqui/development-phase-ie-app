@@ -29,10 +29,13 @@ app.use('/api/v1/transactions', require("./routes/transactionRoutes"));
 
 
 //static files - write only at the time of deploymnet ( deploymnet code)
-app.use(express.static(path.join(__dirname, './client/build'))); 
-app.get('*', function(req,res){
-    res.sendFile(path.join(__dirname, './client/build/index.html'));
+app.use(express.static(path.join(__dirname, "./client/build"))); 
+
+app.get('*', function (req,res){
+    res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
+
+
 
 //port 
 const PORT = 8080 || process.env.PORT;  //8080 is for development phase & process.env.PORT is for production phase
@@ -40,4 +43,4 @@ const PORT = 8080 || process.env.PORT;  //8080 is for development phase & proces
 //listen server
 app.listen(PORT, () => {
    console.log(`Server running on port : ${PORT}`.bgYellow.black);
-})
+});
