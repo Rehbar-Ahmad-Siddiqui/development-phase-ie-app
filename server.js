@@ -41,8 +41,7 @@ app.get('*', function (req,res){
 const PORT = 8080 || process.env.PORT;  //8080 is for development phase & process.env.PORT is for production phase
 
 //listen server
-connectDb.then(() => {
     app.listen(PORT, () => {
         console.log(`Server running on port : ${PORT}`.bgYellow.black);
      });
-});
+
