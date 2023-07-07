@@ -4,7 +4,7 @@ const morgan = require('morgan');
 const dotenv = require('dotenv');
 const colors = require('colors');
 const { connect } = require('http2');
-const path = require('node:path');
+const path = require('path');
 const connectDb = require('./config/connectDb'); // import statement for database connection
 
 // config dot env file
