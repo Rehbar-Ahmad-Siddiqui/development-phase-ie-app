@@ -11,7 +11,7 @@
   },
   "keywords": [],
   "author": "Rehbar Ahmad Siddiqui",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "colors": "^1.4.0",
     "concurrently": "^8.2.0",
